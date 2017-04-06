@@ -22,5 +22,8 @@
     <color name = "color_verde">#54BB76</color>
     <color name = "color_rojo">#D87268</color>
     <color name = "color_blanco">#FFFFFF</color>
+    <color name = "color_negro">#000000</color>
+    <color name = "color_azul_actinver">#002C5C</color>
+
 
 </resources>

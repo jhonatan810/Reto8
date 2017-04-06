@@ -15,12 +15,13 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:background="@color/color_blanco"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginBottom="150dp"
-        android:layout_marginTop="60dp">
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="80dp"
+        android:weightSum="1"
+        android:layout_height="300dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -28,40 +29,84 @@
             app:srcCompat="@mipmap/logo_actin"
             android:id="@+id/imageView2" />
 
-        <EditText
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:id="@+id/txtPaassword"
-            android:hint="Password"
-            android:layout_above="@+id/btnIngresar"
-            android:layout_marginBottom="160dp"
-            android:paddingEnd="0dp"
-            android:paddingStart="0dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:text="ricardo" />
+            android:layout_height="60dp">
 
-        <EditText
+            <TextView
+                android:text="Usuario"
+                android:textColor="@color/color_negro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaUsuario"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:id="@+id/txtUsuario"
+                android:textSize="@dimen/_15dp"
+                android:background="@drawable/borde_rectangulo_gris"
+                android:hint="   Escribe el usuario del cliente"
+                android:layout_above="@+id/txtPaassword"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+
+                android:gravity="left|center"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:id="@+id/txtUsuario"
-            android:hint="Usuario"
-            android:layout_above="@+id/txtPaassword"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="30dp"
-            android:text="Ricardo" />
+            android:layout_weight="0.27">
+
+            <TextView
+                android:text="Password"
+                android:textColor="@color/color_negro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaPassword"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:id="@+id/txtPassword"
+                android:textSize="@dimen/_15dp"
+                android:background="@drawable/borde_rectangulo_gris"
+                android:hint="   Escribe el password del cliente"
+                android:layout_above="@+id/txtPaassword"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+
+                android:gravity="left|center"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
 
         <Button
-            android:text="Ingresar"
+            android:text="Continuar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/btnIngresar"
-            android:textAllCaps="false" />
+            android:background="@color/color_azul_actinver"
+            android:textColor="@color/color_blanco"
+            android:textAllCaps="false"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="26dp"
+            android:layout_height="30dp" />
     </LinearLayout>
 
 </RelativeLayout>

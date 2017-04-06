@@ -169,7 +169,7 @@ public class Compra extends AppCompatActivity {
     public void calcularCostoTitulos(String s){
         try{
             if(!s.toString().isEmpty()){
-                BigDecimal titulos = new BigDecimal(s.toString());
+                BigDecimal titulos = new BigDecimal(s.toString().trim());
 
                 if(!txtPrecioOrden.getText().toString().isEmpty()){
                     BigDecimal precio = new BigDecimal(txtPrecioOrden.getText().toString().replaceAll(" ","").replaceAll(",",""));
