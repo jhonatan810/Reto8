@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="reto8.actinver.com.reto8.reto8.actinver.com.pantallas.Compra"
+    android:layout_alignParentBottom="true"
+    android:background="@color/background_compra">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="PODER DE COMPRA:"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_width="175dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPoderCompra"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="EMISORA:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaEmisora"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblEmisora"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="SERIE:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaSerie"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblSerie"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:text="PRECIO DE MERCADO:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaPrecioMercado"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPrecioMercado"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorGrayLight"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="TIPO DE ORDEN:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaTipoOrden"
+                android:layout_weight="0"
+                tools:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:layout_weight="1"
+                android:paddingTop="0dp">
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <RadioButton
+                            android:text="Limitada"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rdoLimitada"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:text="Mercado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rdoMercado"
+                            android:layout_weight="0.5" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="TITULOS:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaTitulos"
+                android:layout_weight="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/txtTitulos"
+                android:inputType="number"
+                android:background="@drawable/border_round"
+                android:layout_weight="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="PRECIO DE ORDEN:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaPrecioOrden"
+                android:layout_weight="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/txtPrecioOrden"
+                android:inputType="number"
+                android:layout_weight="0"
+                android:background="@drawable/border_round"
+                android:enabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="COSTO TOTAL:"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etiquetaCostoTotal"
+                android:layout_weight="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtCostoTotal"
+                android:layout_weight="0"
+                android:background="@drawable/border_round" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingTop="5dp">
+
+            <Button
+                android:text="Aceptar"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAceptar"
+                android:layout_width="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/borde_boton_verde"
+                android:textColor="@color/color_blanco"
+
+                 />
+
+            <Button
+                android:text="Cancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/borde_boton_rojo"
+                android:textColor="@color/color_blanco"
+                android:layout_weight="1"
+                android:id="@+id/btnCancelar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="CAPTURA DE ORDENES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

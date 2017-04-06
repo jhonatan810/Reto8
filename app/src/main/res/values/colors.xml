@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#aaaaaa</color>
+    <color name="colorAccent">#e289b1</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="colorDarkGray">#3f51b5</color>
+    <color name="colorGrayLight">#eeeeee</color>
+    <color name="colorBlue">#6f99ff</color>
+    <color name="colorYellow">#ffd54f</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+
+    <color name="background_compra">#eff8fd</color>
+    <color name = "text_compra">#6caeeb</color>
+    <color name="background_venta">#ffe7e7</color>
+    <color name = "text_venta">#E97EAB</color>
+    <color name = "fondo_datos">#D4DBF4</color>
+
+    <color name = "color_verde">#54BB76</color>
+    <color name = "color_rojo">#D87268</color>
+    <color name = "color_blanco">#FFFFFF</color>
+
+</resources>

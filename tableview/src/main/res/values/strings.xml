@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TableView</string>
+    <string name="sortable_indicator_content_description">Sortable Indicator</string>
+    <string name="default_header">Header %1$d</string>
+    <string name="default_cell">Data [%1$d:%2$d]</string>
+
+
+    <string name="table_original">Table Original</string>
+    <string name="table_basic">Table Basic</string>
+    <string name="table_original_sortable">Table Original Sortable</string>
+    <string name="order_sections_asc">Order sections ASC</string>
+</resources>

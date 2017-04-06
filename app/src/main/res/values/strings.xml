@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Reto8</string>
+
+    <string name="header_id">Id</string>
+    <string name="header_emisora">EMISORA</string>
+    <string name="header_ultimo_precio">PRECIO</string>
+    <string name="header_porcentaje_var">%VAR</string>
+    <string name="header_compra">COMPRA</string>
+    <string name="header_precio_compra">PRECIO</string>
+    <string name="header_venta">VENTA</string>
+    <string name="header_precio_venta">PRECIO</string>
+    <string name="header_vista">-</string>
+    <string name="header_grafica">-</string>
+    <string name="table_original">Table Original</string>
+    <string name="table_basic">Table Basic</string>
+    <string name="table_original_sortable">Table Original Sortable</string>
+    <string name="order_sections_asc">Order sections ASC</string>
+    <string name="title_activity_compra">Compra</string>
+
+
+</resources>
